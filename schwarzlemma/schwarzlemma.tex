@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+% \usepackage[left=2cm, right=2cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{authblk}
+\usepackage{tkz-euclide}
+\usepackage{tikz}
+\usepackage{changepage}
+\usepackage{lipsum}
+\usepackage{tree-dvips}
+\usepackage{qtree}
+\usepackage[linguistics]{forest}
+\usepackage[hidelinks]{hyperref}
+\usepackage{mathtools}
+\usepackage{blindtext}
+% \usepackage[cal=esstix,frak=euler,scr=boondox,bb= pazo]{mathalfa}
+% the following 2 packages are used for changing the font. 
+\usepackage{mathptmx}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{setspace}
+\graphicspath{{./images/}}
+\allowdisplaybreaks
+\allowbreak
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheoremstyle{named}{}{}{\itshape}{}{\bfseries}{.}{.5em}{\thmnote{#3's }#1}
+\theoremstyle{named}
+\newtheorem*{namedconjecture}{Distinct Factorizations Conjecture}
+\newtheorem{conjecture}{Conjecture}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\curl}{curl}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\id}{id}
+\newcounter{customDef}
+\renewcommand{\thecustomDef}{\arabic{customDef}}
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
+\begin{document}
+
+\noindent
+\textbf{Schwarz Lemma. } Let $f: \{z \in \mathbb{C}: |z| < 1\} \to \mathbb{C}$ be holomorphic and $|f(z)| \leq 1$ for all $z$, $f(0)=0$. Then, $|f(z)| \leq |z|$, $|f'(0)| \leq 1$. If for some $z_0 \neq 0$, $|f(z_0)| = |z_0|$ or if $|f'(0)| = 1$, then $f(z) = cz$ for some $c \in \mathbb{C}$ with $|c|=1$. 
+\\ \\
+\noindent
+\textit{Proof. } Consider the function $g(z)$ defined to be $f(z)/z$ when $z \neq 0$ and $f'(0)$ when $z=0$ with $g: \{z \in \mathbb{C}: |z| < 1\} \to \mathbb{C}$. Then, since $z$ is holomorphic and when $z \neq 0$, it follows that $g$ is holomorphic. By the removable singularities theorem (a corollary to Morrera's theorem), we have that since $g$ is holomorphic on $D_1(0)$ and not on the single point $0 \in D_1(0)$, thus, we get that $g$ is holomorphic on all of $D_1(0)$. Since $g$ is holomorphic (therefore continuous) on $D_1(0)$, then it is continuous on the compact set $\overline{D_r(0)}$ where $0 < r < 1$. Then, $g$ is uniformly continuous and bounded on $\overline{D_r(0)}$. Then, by the maximum modulus principle, the supremum of $g$ is attained on the boundary, so $\sup_{|z| \leq r} |g(z)| = \sup_{|z|=r} |g(z)| = \sup_{|z|=r} \frac{|f(z)|}{|z|} \leq \frac{1}{r}$. Thus, it follows that $|f(z)| \leq r|z|$ for all $z \in \overline{D_r(0)}$ and since $r<1$ we have that $r|z| < |z|$, and so, $|f(z)| < |z|$ and so $|f(z)| \leq |z|$. By the definition of $g$, we also get that $|f'(0)| \leq 1$. Now, we prove the second sentence of the theorem. By assumption, $|g(z_0)|=1$ for some nonzero $z_0 \in D_1(0)$. By the chain of inequalities 4 lines above, it follows that that supremum of $|g|$ is attained inside $D_1(0)$, since $0 < |z_0| < 1$, so by the second sentence of the maximum modulus principle, $g$ is constant, so put $g=c$ on $D_1(0)$ with $|c|=1$, by the chain of inequalities mentioned in the beginning of this sentence. Thus, on $D_1(0)$, $\frac{f(z)}{z}=c$, so $f(z)=cz$ with $|c|=1$, as mentioned previously. \qed
+\end{document}
