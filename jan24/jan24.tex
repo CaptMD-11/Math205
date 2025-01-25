@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage[left=2cm, right=2cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{authblk}
+\usepackage{tkz-euclide}
+\usepackage{tikz}
+\usepackage{changepage}
+\usepackage{lipsum}
+\usepackage{tree-dvips}
+\usepackage{qtree}
+\usepackage[linguistics]{forest}
+\usepackage[hidelinks]{hyperref}
+\usepackage{mathtools}
+\usepackage{blindtext}
+% \usepackage[cal=esstix,frak=euler,scr=boondox,bb= pazo]{mathalfa}
+% the following 2 packages are used for changing the font. 
+\usepackage{mathptmx}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{setspace}
+% the following line sets no indent to all paragraphs in this file
+\setlength\parindent{0pt}
+\graphicspath{{./images/}}
+\allowdisplaybreaks
+\allowbreak
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheoremstyle{named}{}{}{\itshape}{}{\bfseries}{.}{.5em}{\thmnote{#3's }#1}
+\theoremstyle{named}
+\newtheorem*{namedconjecture}{Distinct Factorizations Conjecture}
+\newtheorem{conjecture}{Conjecture}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\curl}{curl}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\id}{id}
+\newcounter{customDef}
+\renewcommand{\thecustomDef}{\arabic{customDef}}
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
+\begin{document}
+
+\textbf{Theorem. } Let $K \subseteq \mathbb{C}$ compact, $f: K \to \mathbb{C}$ continuous, $f$ holomorphic on $K$. Then, $\sup_{z \in K} |f(z)| = \sup{z \in \partial K} |f(z)|$. 
+\\
+\textbf{Theorem. } Let $\Omega$ be open \& connected, $f: \Omega \to \mathbb{C}$ holomorphic, $z_0 \in \Omega$, $|f(z_0)| = \sup_{z \in \Omega}$. Then, $f$ constant. Remark: Apply to $e^f$ and $|e^f| = e^{\textrm{Re}f}$ and get $\textrm{Re} f(z_0) = \sup_{z \in \Omega}\textrm{Re}f(z)$ which implies that $f$ is constant. Apply similar to logic to $\textrm{Im}f$ (replacing $f$ by $-if$). 
+
+\end{document}
