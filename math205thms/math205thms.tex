@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+% \usepackage[left=2cm, right=2cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{authblk}
+\usepackage{tkz-euclide}
+\usepackage{tikz}
+\usepackage{changepage}
+\usepackage{lipsum}
+\usepackage{tree-dvips}
+\usepackage{qtree}
+\usepackage[linguistics]{forest}
+\usepackage[hidelinks]{hyperref}
+\usepackage{mathtools}
+\usepackage{blindtext}
+% \usepackage[cal=esstix,frak=euler,scr=boondox,bb= pazo]{mathalfa}
+% the following 2 packages are used for changing the font. 
+\usepackage{mathptmx}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{setspace}
+\graphicspath{{./images/}}
+\allowdisplaybreaks
+\allowbreak
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheoremstyle{named}{}{}{\itshape}{}{\bfseries}{.}{.5em}{\thmnote{#3's }#1}
+\theoremstyle{named}
+\newtheorem*{namedconjecture}{Distinct Factorizations Conjecture}
+\newtheorem{conjecture}{Conjecture}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\curl}{curl}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\id}{id}
+\newcounter{customDef}
+\renewcommand{\thecustomDef}{\arabic{customDef}}
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
+\begin{document}
+
+\begin{center}
+    Math 205 Theorems. 
+\end{center}
+
+\begin{enumerate}
+    \item \textbf{Schwarz Lemma. } Let $f: \{z \in \mathbb{C}: |z| < 1\} \to \mathbb{C}$ be holomorphic and $|f(z)| \leq 1$ for all $z$, and $f(0)=0$. Then, $|f(z)| \leq |z|$ and $f'(0) \leq 1$. If for some $z_0 \neq 0$, $|f(z_0)| = |z_0|$ or if $|f'(0)| = 1$, then $f(z)=cz$ for some $c \in \mathbb{C}$ with $|c|=1$. 
+    \item \textbf{Theorem. } Let $K \subseteq \mathbb{C}$ compact (write: $K \Subset \mathbb{C}$), $f: K \to \mathbb{C}$ continuous, $f$ holomorphic on $K$. Then, $\sup_{z \in K}|f(z)| = \sup_{z \in \partial K} |f(z)|$. 
+    \item \textbf{Theorem. } Let $f: \Omega \to \mathbb{C}$ holomorphic ($\Omega$ open \& connected), $z_0 \in \Omega$, $|f(z_0)| = \sup_{z \in \Omega} |f(z)|$. Then, $f$ is constant. 
+    \item \textbf{Theorem (Horwitz). } Let $\Omega \subseteq \mathbb{C}$ be open \& connected, $f: \Omega \to \mathbb{C}$, $f_n: \Omega \to \mathbb{C}$, $f_n$ holomorphic, $f_n(\Omega) \subset \mathbb{C} \setminus \{0\}$, $n \in \mathbb{N}$, $||f_n-f||_k \to 0$ for all $K \Subset \Omega$. Then, either $f=0$ identically or $f(\Omega) \subset \mathbb{C} \setminus \{0\}$. 
+    \item \textbf{Theorem. } Let $\Omega \subseteq \mathbb{C}$ be open, $\mathscr{F}$ be a set of holomorphic function $\Omega \to \mathbb{C}$. Then, TFAE: 
+    \begin{enumerate}
+        \item For every $K \Subset \Omega$, $\sup_{f \in \mathscr{F}}||f||_K < \infty$. 
+        \item For every sequence $(f_n)_{n \in \mathbb{N}} \subset \mathscr{F}$, there exists a subsequence $(f_{n_j})_{j \in \mathbb{N}}$, $n_1 < n_2 < \dots$, such that $(f_{n_j})_{j \in \mathbb{N}}$ is uniformly convergent on compact subsets of $\Omega$. 
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}
