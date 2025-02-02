@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+% \usepackage[left=2cm, right=2cm, top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{authblk}
+\usepackage{tkz-euclide}
+\usepackage{tikz}
+\usepackage{changepage}
+\usepackage{lipsum}
+\usepackage{tree-dvips}
+\usepackage{qtree}
+\usepackage[linguistics]{forest}
+\usepackage[hidelinks]{hyperref}
+\usepackage{mathtools}
+\usepackage{blindtext}
+% \usepackage[cal=esstix,frak=euler,scr=boondox,bb= pazo]{mathalfa}
+% the following 2 packages are used for changing the font. 
+\usepackage{mathptmx}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{setspace}
+% the following line removes indent for all paragraphs
+\setlength{\parindent}{0pt}
+\graphicspath{{./images/}}
+\allowdisplaybreaks
+\allowbreak
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheoremstyle{named}{}{}{\itshape}{}{\bfseries}{.}{.5em}{\thmnote{#3's }#1}
+\theoremstyle{named}
+\newtheorem*{namedconjecture}{Distinct Factorizations Conjecture}
+\newtheorem{conjecture}{Conjecture}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\curl}{curl}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\id}{id}
+\newcounter{customDef}
+\renewcommand{\thecustomDef}{\arabic{customDef}}
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
+\begin{document}
+
+\begin{center}
+    HW 2.  
+\end{center}
+
+Problem: Show $\sum_{n=1}^{\infty} \frac{1}{n^z}$ converges uniformly on compact subsets of $A := \{z \in \mathbb{C} \mid \textrm{Re}z>1\}$ (where $n^{-z} = e^{-z\log n})$. 
+\\ \\
+\textit{Proof. } Let $K \Subset A$. By Heine-Borel, since $K$ is compact, then $K$ is closed \& bounded. Then, for all $z \in K \subsetneq A$, we have that when $z$ is written as $z=a+bi$, thus $a > 1$. Since $K$ is bounded, there exists an $R \in \mathbb{R}$ such that $|z_1 - z_2| < R$ for all $z_1,z_2 \in K$. Since $z \in K \subsetneq A$, we get that $|z| > 1$ for all $z \in K$. Now, we show uniform convergence. Show that for each $\epsilon > 0$ there exists an $M \in \mathbb{R}_{>0}$ such that if $n \geq M$, then $|f_n(z) - f(z)| < \epsilon$ for all $z \in K$. Note that $|f_n(z) - f(z)| = \left|\left(\sum_{n=1}^{M} n^{-z}\right) - \left(\sum_{n=1}^{\infty}n^{-z}\right)\right| = \left|\sum_{n=M+1}^{\infty} n^{-z}\right| \leq \sum_{n=M+1}^{\infty} |n^{-z}| \leq \sum_{n=M+1}^{\infty} |e^{-z\log n}|$. If we write $z=a+bi$, then $\sum_{n=M+1}^{\infty} |e^{-z\log n}| \leq \sum_{n=M+1}^{\infty} |e^{-(a+bi)\log n}| \leq \sum_{n=M+1}^{\infty} |e^{(-a\log n) + (-b\log n)i}|$ (note: $|e^{x+iy}| = |e^x \cdot e^{iy}| = |e^x| |e^{iy}| = e^x$). Then, we get $\sum_{n=M+1}^{\infty} |e^{(-a\log n) + (-b\log n)i}| \leq \sum_{n=M+1}^{\infty} |e^{-a\log n}| \leq \sum_{n=M+1}^{\infty} \frac{1}{e^{a\log n}} \leq \sum_{n=M+1}^{\infty} \frac{1}{n^a} < \epsilon$, since $\sum \frac{1}{n^a}$ is a convergent $p$-series (from calculus) with $p=a>1$, since $z \in K \subsetneq A$, so thus we apply the Cauchy criterion to $\sum \frac{1}{n^a}$ to get $\sum_{n=M+1}^{\infty} \frac{1}{n^a} < \epsilon$. Thus, we conclude that $\sum_{n=1}^{\infty} n^{-z}$ converges uniformly on compact subsets of $A = \{z \in \mathbb{C} \mid \textrm{Re} > 1\}$.  
+
+\end{document}
