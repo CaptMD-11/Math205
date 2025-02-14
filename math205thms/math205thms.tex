@@ -65,7 +65,14 @@
 	\item \textbf{Theorem. } Let $\Omega$ be an open, connected set so that there is $f: \Omega \to \mathbb{D}$ that is a holomorphic isomorphism. Then, $\textrm{iso}(\Omega, \mathbb{D}) \ni g \to \left(g(z_0),\frac{g'(z_0)}{|g'(z_0)|}\right) \in \mathbb{D} \times \{|z|=1\}$ is a bijection. 
 	\item \textbf{Definition of Jordan Curve. } A Jordan Curve is given by a map $[0,1] \ni t \to C(t) \in \mathbb{C}$ which is continuous, 1-1 on $[0,1)$ and $C(0)=C(1)$ (no self-intersection otherwise). 
 	\item \textbf{Jordan Curve Theorem. } If $C: [0,1] \to \mathbb{C}$ is a Jordan curve, then $\mathbb{C} \setminus C([0,1])$ has 2 connected components. One of these is bounded and the other, unbounded. (The bounded component is called the "interior") We shall denote by $|C|$ the set $C([0,1])$ when $C: [0,1] \to \mathbb{C}$. 
-	\item \textbf{Caratheodory's Theorem. } Let $\Gamma$ be a Jordan curve and $\Omega$ be the interior region (then $\partial \Omega = |\Gamma|$). Then, if $f: \mathbb{D} \to \Omega$ is a holomorphic isomorphism, then $f$ extends to a homeomorphism $\overline{\mathbb{D}} \to \overline{\Omega}$, where $\partial \mathbb{D}$ is mapped to $\partial \Omega = |\Gamma|$. 
+	\item \textbf{Caratheodory's Theorem. } Let $\Gamma$ be a Jordan curve and $\Omega$ be the interior region (then $\partial \Omega = |\Gamma|$). Then, if $f: \mathbb{D} \to \Omega$ is a holomorphic isomorphism, then $f$ extends to a homeomorphism $\overline{\mathbb{D}} \to \overline{\Omega}$, where $\partial \mathbb{D}$ is mapped to $\partial \Omega = |\Gamma|$.
+	\item  \textbf{Rectifiable def. } An arc $\phi: [a,b] \to \mathbb{C}$ (the map $\phi$ is 1-1 and continuous) is rectifiable if it has 'length' (bounded variation), that is, if: 
+	$$
+	\sup_{a=t_0<t_1<\dots<t_k=b} \sum_{j=0}^{k-1} \left(|\phi(t_{j+1}) - \phi(t_j)|\right) < \infty
+	$$
+	where $k \in \mathbb{N}$. 
+	\item \textbf{Theorem. } Let $\Omega,\omega$ be disjoint open regions and $\Gamma$ a rectifiable arc so that $|\Gamma| \subset \partial \Omega \cap \partial \omega$ and $|\Gamma| \cup \Omega \cup \omega$ open ($\Gamma$ has no endpoints). Assume also $f: |\Gamma| \cup \Omega \to \mathbb{C}$, $g: |\Gamma| \cup \omega \to \mathbb{C}$ are continuous and $f\mid_\Omega$, $g\mid_\Omega$ holomorphic and $f\mid_{|\Gamma|} = g\mid_{|\Gamma|}$. Then, $F: \Omega \cup |\Gamma| \cup \omega \to \mathbb{C}$ is holomorphic.
+	\item \textbf{Theorem (Schwarz Reflection Principle). } Let $\Omega = \Omega^{\star}$ ($=\{\overline{z} \mid z \in \Omega\}$) open region, $\Omega \cap \mathbb{R} \supset (a,b)$ and $\Omega_{\pm} = \Omega \cap \{\pm \textrm{Im}z > 0\}$. If $f: \Omega_+ \cup (a,b) \to \mathbb{C}$ continuous, $f\mid_{(a,b)} \subset \mathbb{R}$, $f\mid_{\Omega_+}$ holomorphic, then, $F(z)$, with $F(z)=f(z)$ if $z \in \Omega_+ \cup (a,b)$ and $F(z)=\overline{f(\overline{z})}$ if $z \in \Omega_-$ is holomorphic in $\Omega_+ \cup (a,b) \cup \Omega_-$.  
 \end{enumerate}  
  
 \end{document}
