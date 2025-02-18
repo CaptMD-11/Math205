@@ -1,0 +1,15 @@
+\input{~/normal-preamble.tex}
+
+\begin{center}
+	Math 205 - HW 4
+\end{center} 
+
+\noindent \textit{Solution: Vignesh Nydhruva} 
+\\ 
+\\
+\textit{Problem: } Let $\lambda = (z_1,z_2,z_3,z_4) = \frac{z_1 - z_3}{z_1 - z_4} / \frac{z_2 - z_3}{z_2 - z_4}$ (the cross ratio) and let $\sigma$ be a permutation on $\{1,2,3,4\}$. Then, prove that the value of $\sigma(\lambda) := (z_{\sigma(1)}, z_{\sigma(2)}, z_{\sigma(3)}, z_{\sigma(4)})$ is one of $\lambda, \frac{1}{\lambda}, 1 - \lambda, \frac{1}{1-\lambda}, 1 - \frac{1}{\lambda}, \frac{\lambda}{\lambda - 1}$. 
+\\
+\\
+\textit{Proof: } The main idea of this proof is to introduce the operation of swapping elements in a cross ratio and observe its connection to functions of $\lambda$, along with their compositions. The first part of this proof requires tedious algebra calculations, which we will omit here. First, notice that swapping $z_1$ and $z_2$ in the cross ratio for $\lambda$ gives $(z_2,z_1,z_3,z_4) = \frac{1}{\lambda}$. Additionally, instead swapping $z_3$ and $z_4$ in $\lambda$ gives $(z_1,z_2,z_4,z_3) = \frac{1}{\lambda}$. Since both of these swaps give the same function of $\lambda$, we declare them equivalent. We also consider the other types of swaps that can be made. $z_1 \leftrightarrow z_3$ or $z_2 \leftrightarrow z_4$ give $\lambda \mapsto \frac{\lambda}{\lambda - 1}$ and lastly, $z_1 \leftrightarrow z_4$ or $z_2 \leftrightarrow z_3$ give $\lambda \mapsto 1 - \lambda$. It follows trivially that any permutation of the elements in the cross ration $(z_1,z_2,z_3,z_4)$ can be formed by composing the swap operations previously listed. Additionally, if $\sigma$ preserves the positions of all except two of the $z_i'$s then $\sigma(\lambda)$ is one of $\frac{1}{\lambda}, \frac{\lambda}{\lambda - 1}, 1 - \lambda$. Also, recognize that if a permutation consists of two nonequivalent swaps, then none of $z_i'$s are in the original placement in $\sigma(\lambda)$. By the definition of a swap (that acts on two elements), it follows that the number of elements that retain their position after $\sigma(\lambda)$ is either 4, 2, or 0. Furthermore, it can be verified (through calculation) that any permutation $\sigma$ on $\{1,2,3,4\}$ can be obtained by performing at most 3 swaps. If we perform 0 swaps, we have the identity permutation, namely, $(z_1,z_2,z_3,z_4) \xmapsto{\sigma} (z_1,z_2,z_3,z_4) = \lambda$. START IN THE MIDDLE OF THE 10TH PAGE IN HARD COPY SOLUTION
+
+\end{document}
