@@ -72,7 +72,20 @@
 	$$
 	where $k \in \mathbb{N}$. 
 	\item \textbf{Theorem. } Let $\Omega,\omega$ be disjoint open regions and $\Gamma$ a rectifiable arc so that $|\Gamma| \subset \partial \Omega \cap \partial \omega$ and $|\Gamma| \cup \Omega \cup \omega$ open ($\Gamma$ has no endpoints). Assume also $f: |\Gamma| \cup \Omega \to \mathbb{C}$, $g: |\Gamma| \cup \omega \to \mathbb{C}$ are continuous and $f\mid_\Omega$, $g\mid_\Omega$ holomorphic and $f\mid_{|\Gamma|} = g\mid_{|\Gamma|}$. Then, $F: \Omega \cup |\Gamma| \cup \omega \to \mathbb{C}$ is holomorphic.
-	\item \textbf{Theorem (Schwarz Reflection Principle). } Let $\Omega = \Omega^{\star}$ ($=\{\overline{z} \mid z \in \Omega\}$) open region, $\Omega \cap \mathbb{R} \supset (a,b)$ and $\Omega_{\pm} = \Omega \cap \{\pm \textrm{Im}z > 0\}$. If $f: \Omega_+ \cup (a,b) \to \mathbb{C}$ continuous, $f\mid_{(a,b)} \subset \mathbb{R}$, $f\mid_{\Omega_+}$ holomorphic, then, $F(z)$, with $F(z)=f(z)$ if $z \in \Omega_+ \cup (a,b)$ and $F(z)=\overline{f(\overline{z})}$ if $z \in \Omega_-$ is holomorphic in $\Omega_+ \cup (a,b) \cup \Omega_-$.  
+	\item \textbf{Theorem (Schwarz Reflection Principle). } Let $\Omega = \Omega^{\star}$ ($=\{\overline{z} \mid z \in \Omega\}$) open region, $\Omega \cap \mathbb{R} \supset (a,b)$ and $\Omega_{\pm} = \Omega \cap \{\pm \textrm{Im}z > 0\}$. If $f: \Omega_+ \cup (a,b) \to \mathbb{C}$ continuous, $f\mid_{(a,b)} \subset \mathbb{R}$, $f\mid_{\Omega_+}$ holomorphic, then, $F(z)$, with $F(z)=f(z)$ if $z \in \Omega_+ \cup (a,b)$ and $F(z)=\overline{f(\overline{z})}$ if $z \in \Omega_-$ is holomorphic in $\Omega_+ \cup (a,b) \cup \Omega_-$. 
+	\item \textbf{Analytic Arc def. } Analytic arc is $\phi: (a,b) \to \mathbb{C}$ so that there is $f: \omega \to \mathbb{C}$ univalent with $\omega \supset (a,b), f \mid_{(a,b)} = \phi$, where we also require $\phi$ to be holomorphic within some neighborhood containing it. 
+	\item \textbf{Theorem. } Let $\Omega$ be a region, $\gamma$ an analytic arc, $|\gamma| \supset \partial \Omega$ from univalent $f: \omega \to \mathbb{C}$ and assume the following: 
+	\begin{enumerate}	
+		\item $f(\omega \cap \{\textrm{Im}z > 0\}) \subset \Omega$. 
+		\item $f(\omega \cap \{\textrm{Im}z < 0\}) \cap \Omega = \emptyset$. 
+		\item let $F: \Omega \cup |\gamma| \to \mathbb{C}$ continuous, and $F \mid_\Omega$ holomorphic with $F(|\gamma|) \subset |\Gamma|$, where $\Gamma$ is an analytic arc. 
+	\end{enumerate} 
+	Then, there is an open $\Omega$, with $\Omega \supset \Omega \cup |\gamma|$ so that $F$ has a holomorphic extension to $\Omega$. 
+	\item \textbf{Theorem (Scwharz-Christoffel Formula). } Let $F: \overline{\mathbb{D}} \to \overline{\Omega}$ be a homeomorphism (by Caratheodory) which extends the conformal map $F \mid_{\mathbb{D}} \to \Omega$ and $F(w_k) = z_k$. Let $\overline{\Omega}$ be a polygon with angles $\alpha_k\pi, \beta_k = 1-\alpha_k$. Then, 
+	$$
+	F(w) = C \cdot \left(\int_{0}^{w} \left(\prod_{k=1}^{n} (w-w_k)^{-\beta_k}\right) dw \right) + C'. 
+	$$
+	\item \textbf{Theorem. } If $\gamma$ is an analytic arc, then it is automatically rectifiable. 
 \end{enumerate}  
  
 \end{document}
