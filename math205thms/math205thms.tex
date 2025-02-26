@@ -81,11 +81,16 @@
 		\item let $F: \Omega \cup |\gamma| \to \mathbb{C}$ continuous, and $F \mid_\Omega$ holomorphic with $F(|\gamma|) \subset |\Gamma|$, where $\Gamma$ is an analytic arc. 
 	\end{enumerate} 
 	Then, there is an open $\Omega$, with $\Omega \supset \Omega \cup |\gamma|$ so that $F$ has a holomorphic extension to $\Omega$. 
-	\item \textbf{Theorem (Scwharz-Christoffel Formula). } Let $F: \overline{\mathbb{D}} \to \overline{\Omega}$ be a homeomorphism (by Caratheodory) which extends the conformal map $F \mid_{\mathbb{D}} \to \Omega$ and $F(w_k) = z_k$. Let $\overline{\Omega}$ be a polygon with angles $\alpha_k\pi, \beta_k = 1-\alpha_k$. Then, 
+	\item \textbf{Theorem (Schwarz-Christoffel Formula). } Let $F: \overline{\mathbb{D}} \to \overline{\Omega}$ be a homeomorphism (by Caratheodory) which extends the conformal map $F \mid_{\mathbb{D}} \to \Omega$ and $F(w_k) = z_k$. Let $\overline{\Omega}$ be a polygon with angles $\alpha_k\pi, \beta_k = 1-\alpha_k$. Then, 
 	$$
 	F(w) = C \cdot \left(\int_{0}^{w} \left(\prod_{k=1}^{n} (w-w_k)^{-\beta_k}\right) dw \right) + C'. 
 	$$
 	\item \textbf{Theorem. } If $\gamma$ is an analytic arc, then it is automatically rectifiable. 
+	\item \textbf{Schwarz-Christoffel Formula for Upper-Half Plane. } If $G: \{\textrm{Im} u > 0\} \to \Omega$ is a conformal map, where $\Omega$ is the interior of a polygon with outer angles $\beta_1\pi,\dots,\beta_k\pi$ and the point $\infty$ corresponds to $z_n$, then: 
+	$$
+	G(u) = C \cdot \left(\int_{0}^{u} \left(\prod_{k=1}^{n-1} (u - \xi_k)^{-\beta_k}\right) du \right) + C', 
+	$$
+	where $\xi_k \in \mathbb{R}$. The product has only $n-1$ factors. The external angle $\beta_n$ does not appear explicitly. If $\beta_1 + \dots + \beta_{n-1}=2$, then $\beta_n = 0$. 
 \end{enumerate}  
  
 \end{document}
