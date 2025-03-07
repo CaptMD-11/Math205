@@ -49,6 +49,12 @@
 	G(u) = C \cdot \left(\int_{0}^{u} \left(\prod_{k=1}^{n-1} (u - \xi_k)^{-\beta_k}\right) du \right) + C', 
 	$$
 	where $\xi_k \in \mathbb{R}$. The product has only $n-1$ factors. The external angle $\beta_n$ does not appear explicitly. If $\beta_1 + \dots + \beta_{n-1}=2$, then $\beta_n = 0$. 
+	\item \textbf{Schwarzian Derivative. } For a function $f$, the Schwarzian derivative of $f$ is defined as: 
+	$$
+	S(f) = \frac{f'''}{f'} - \frac{3}{2}\left(\frac{f''}{f'}\right)^2 = \left(\frac{f''}{f'}\right)' - \frac{1}{2}\left(\frac{f''}{f'}\right)^2. 
+	$$
+	\item \textbf{A formula using Schwarzian derivative. } $S(f \circ g) = (S(f) \circ g)(g')^2 + S(g)$. 
+	\item \textbf{Cor. } Now let $f(z) = \frac{az+b}{cz+d}$ be a fractional linear transformation. Then, $S(f)=0$. Also, we get that $S(f \circ g) = S(g)$. Thus, we conclude that $S(g)$ is invariant under composition with a fractional linear transformation, under the Schwarzian derivative operator. 
 \end{enumerate}  
  
 \end{document}
