@@ -68,6 +68,13 @@
 	\item \textbf{Theorem. } $\prod_{k \geq 1} z_k$ converges implies $z_k \to 1$. 
 	\item \textbf{Infinite proudct absolute convergence def. } $\prod_{k \geq 1}z_k$ is absolutely convergent iff $\sum_{k \geq 1} |\Log z_k| < \infty$. 
 	\item \textbf{Theorem. } $\prod_{k \geq 1}z_k$ is absolutely convergent iff $\sum_{k \geq 1} |z_k - 1| < \infty$. 
+	\item \textbf{Weierstrass Theorem. } Given $a_n \in \mathbb{C}$, $|a_n| \to \infty$, $a_n \neq 0$, and $n \geq 0$ an integer, there exists an entire function with multiplicity of 0 at zero 0 and other zeros at $a_n$ (multiplicities by repetition). Every function with these zeros is of the form 
+	$$
+	f(z) = z^m \cdot e^{g(z)} \cdot \prod_{n = 1}^{\infty} \left(1 - \frac{z}{a_n}\right) \cdot e^{\frac{z}{a_n} + \dots + \frac{z^{k_n}}{a_n^{k_n}} \cdot \frac{1}{k_n}}
+	$$
+	for some $k_n \geq 0$, $g$ entire, and the infinite product uniformly absolutely convergent on compact subsets of $\mathbb{C}$. 
+	\item \textbf{Cor. } If $f$ is meromorphic on $\mathbb{C}$, then there are $f_1,f_2$ entire functions so that $f = \frac{f_1}{f_2}$. 
+	\item \textbf{Canonical product, genus def. } If we have that the sum in the exponential of $e$ in the infinite product component of $f$ (as in Weierstrass theorem) has last term that is raised to a fixed exponent $h$, we say $f$ is the canonical product and say that $f$ has genus $h$. Equivalently, we say if $f: \mathbb{C} \to \mathbb{C}$ entire, we say $f$ has finite genus if $f = e^{g(z)} \cdot P(z)$, where $P(z)$ is a canonical product and $g$ is a polynomial. 
 \end{enumerate}  
  
 \end{document}
