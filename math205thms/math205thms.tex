@@ -89,6 +89,9 @@
 	\item \textbf{Mellin transform def. } This is a Fourier transform on $((0,\infty), \cdot)$ $\int_{0}^{\infty} \lambda^z \cdot f(\lambda) \cdot \frac{d \lambda}{\lambda} = \int_{0}^{\infty} \lambda^{z-1} \cdot f(\lambda) \cdot d\lambda$. To get $I(z)$, one takes $f(\lambda) = e^{-\lambda}$, for $\lambda \in (0,\infty)$. 
 	\item \textbf{Lemma. } $\int_{0}^{\infty} t^z e^{-\lambda t} \frac{dt}{t} = \lambda^{-z} \Gamma(z)$, for $\lambda>0$ and $\textrm{Re}z>0$. 
 	\item \textbf{Formula. } Take $g(t) = \sum_n c_n e^{\lambda_n t}$ with $\lambda_n \to \infty$, with $\lambda_n > 0$. Then, the Mellin transform of $g(t)$ is $\int_{0}^{\infty} t^z (\sum_n c_n e^{-\lambda_n t}) \frac{dt}{t} = \Gamma(z) \cdot \sum_n c_n \lambda_n^{-z}$. 
+	\item \textbf{Formula. } $\frac{1}{\Gamma(z)} = \lim_{n \to \infty} \frac{1}{n!} \left(1 - \frac{\log n}{n}z\right)^n \cdot \prod_{m=0}^n (z+m)$. 
+	\item \textbf{Formula. } $\theta(t) = \frac{1}{\sqrt{t}} \cdot \theta(\frac{1}{t})$ if $t>0$, where $\theta(t) = \sum_{n \in \mathbb{Z}} e^{-\pi n^2 t}$. 
+	\item \textbf{Formula. } The Poisson Summation Formula is roughly that for \enquote{good $f$}, $\sum_{n \in \mathbb{Z}} f(n) = \sum_{n \in \mathbb{Z}} \mathscr{F}f(n)$. 
 \end{enumerate}  
  
 \end{document}
