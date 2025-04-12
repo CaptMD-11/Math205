@@ -92,6 +92,10 @@
 	\item \textbf{Formula. } $\frac{1}{\Gamma(z)} = \lim_{n \to \infty} \frac{1}{n!} \left(1 - \frac{\log n}{n}z\right)^n \cdot \prod_{m=0}^n (z+m)$. 
 	\item \textbf{Formula. } $\theta(t) = \frac{1}{\sqrt{t}} \cdot \theta(\frac{1}{t})$ if $t>0$, where $\theta(t) = \sum_{n \in \mathbb{Z}} e^{-\pi n^2 t}$. 
 	\item \textbf{Formula. } The Poisson Summation Formula is roughly that for \enquote{good $f$}, $\sum_{n \in \mathbb{Z}} f(n) = \sum_{n \in \mathbb{Z}} \mathscr{F}f(n)$. 
+	\item \textbf{Prop. } If $f: \mathbb{R} \to \mathbb{C}$ so that $f$ is continuous $\sum_{n \in \mathbb{Z}} ||f^{(k)}||_{[n,n+1]} < \infty$ for $k=0,1,2,\dots$, then the Poisson Summation Formula $\sum_{n \in \mathbb{Z}} f(n) = \sum_{n \in \mathbb{Z}} \mathscr{F}f(n)$ holds. 
+	\item \textbf{Cor. } If $f: \mathbb{R} \to \mathbb{C}$, $C^2$ and $|f|(\lambda) \leq C(1+t^2)^{-1}$, $|f'|(t) \leq C(1+t^2)^{-1}$, $|f''(t)| \leq C(1+t^2)^{-2}$, then the Poisson Summation formula holds for $f$. 
+	\item \textbf{Cor. } Let $\lambda>0$. Then the Poisson Summation Formula holds for $f(t) = e^{-\lambda t^2}$. 
+	\item \textbf{Lemma. } $\int_{-\infty}^{\infty} e^{-\pi t^2} dt = 1$, which is the Fourier transform of $e^{-\lambda t^2}$. 
 \end{enumerate}  
  
 \end{document}
