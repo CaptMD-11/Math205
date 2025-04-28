@@ -126,6 +126,22 @@
 		\Theta(z,\tau) = \left(\prod_{n \geq 1}(1 - q^{2n})\right) \cdot \left(\prod_{m \geq 1}(1+q^{2m-1}p^2)(1+q^{2m-1}p^{-2})\right)
 	$$
 	where $q = e^{\pi i \tau}$ and $p = e^{\pi i z}$. 
+	\item \textbf{Jacobi Derivative Formula. } 
+	$$
+	\frac{\partial}{\partial z} \Theta_{1,1}(z,\tau) \mid_{z=0} = -\pi \cdot \Theta_{0,0}(0,\tau) \cdot Theta_{0,1}(0,\tau) \cdot \Theta_{1,0}(0,\tau). 
+	$$
+	\item \textbf{Lemma. } 
+	$$
+	\Theta(\frac{z}{\tau}, -\frac{1}{\tau}) = (-ie)^{1/2} \cdot e^{\pi i \cdot \frac{z^2}{\tau}} \cdot \Theta(z,\tau). 
+	$$
+	\item \textbf{Fact. } $\Theta(z,t)$ is the unique holomorphic function $f(z;\tau)$ on $\mathbb{C} \times H$ so that 
+	\begin{enumerate}
+		\item $f(z+1,\tau) = f(z,\tau)$. 
+		\item $f(z+\tau,\tau) = \exp(-\pi i \tau - 2\pi i z) \cdot f(z,\tau)$. 
+		\item $f(z+\frac{1}{z},\tau+1 = f(z,\tau)$. 
+		\item $f(z/\tau, -1/\tau) = (-i\tau)^{1/2}\exp(\pi i \frac{z^2}{\tau}) \cdot f(z,\tau)$. 
+		\item for all $z \in \mathbb{C}$, $\lim_{\textrm{Im} \tau \to +\infty} f(z,\tau) = 1$. 
+	\end{enumerate}
 \end{enumerate}  
  
 \end{document}
