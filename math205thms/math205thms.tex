@@ -142,6 +142,11 @@
 		\item $f(z/\tau, -1/\tau) = (-i\tau)^{1/2}\exp(\pi i \frac{z^2}{\tau}) \cdot f(z,\tau)$. 
 		\item for all $z \in \mathbb{C}$, $\lim_{\textrm{Im} \tau \to +\infty} f(z,\tau) = 1$. 
 	\end{enumerate}
+	\item \textbf{Fact. } If $a_1,\dots,a_k, b_1,\dots,_k \in \mathbb{C}$ are so that $\sum a_j = \sum b_j$ and $\{a_1,\dots,a_k\} \cap \{b_1,\dots,b_k\} = \emptyset$, then 
+	$$
+	\prod_{1 \leq j \leq k} \frac{\Theta(z-a_j,\tau)}{\Theta(z-b_j,\tau)} 
+	$$
+	(where $\tau$ is fixed) is a meromorphic function that is doubly periodic (with periods $1,\tau$) with poles at $b_j + \frac{1}{2}(1+\tau)$ and zeros at $a_j + \frac{1}{2}(1+\tau)$ mod $\mathbb{Z} + \tau\mathbb{Z}$ (the poles and zeros are simple). 
 \end{enumerate}  
  
 \end{document}
