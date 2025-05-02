@@ -147,6 +147,13 @@
 	\prod_{1 \leq j \leq k} \frac{\Theta(z-a_j,\tau)}{\Theta(z-b_j,\tau)} 
 	$$
 	(where $\tau$ is fixed) is a meromorphic function that is doubly periodic (with periods $1,\tau$) with poles at $b_j + \frac{1}{2}(1+\tau)$ and zeros at $a_j + \frac{1}{2}(1+\tau)$ mod $\mathbb{Z} + \tau\mathbb{Z}$ (the poles and zeros are simple). 
+	\item \textbf{$r_k$ generating series. } If $m \in \mathbb{Z}_{\geq 0}$, define $r_k(m) = \# \{(n_1,\dots,n_k) \in \mathbb{Z}^k \mid n_1^2 + \dots n_k^2 = m\}$. 
+	\item \textbf{Formula. } 
+	$$
+	\Theta(0,\tau)^k = \left(\sum_{n \in \mathbb{Z}} q^{n^2} \right)^k = \left(\sum_{n_1 \in \mathbb{Z}} q^{n_1^2}\right) \cdot \cdot \cdot \left(\sum_{n_k \in \mathbb{Z}} q^{n_k^2}\right). 
+	$$
+	\item \textbf{Theorem. } If $d_1(n)$ is the number of divisors of $n$ which are congruent to 1 (mod 4) and $d_3(n)$ which are congruent to 3 (mod 4), then if $n \geq 1$, then $r_2(n) = 4(d_1(n) - d_3(n))$. 
+	\item \textbf{Theorem. } $r_4(n) = 8 \sum_{d \mid n} d$ if $n \equiv 1 \Mod{2}$ and $r_4(n) = 24 \sum_{d \mid n, d \textrm{ odd}} d$ if $n \equiv 0 \Mod{2}$. 
 \end{enumerate}  
  
 \end{document}
